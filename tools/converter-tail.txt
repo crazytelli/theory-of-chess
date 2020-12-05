@@ -1,6 +1,2 @@
-\begin{center}
-\scalebox{SCALEBOX_WIDTH}{\showboard}
-\end{center}
-% \subcaption{...}
-\end{framed}
+\vspace{2mm}
 \end{minipage}

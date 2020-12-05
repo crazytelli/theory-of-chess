@@ -1,4 +1,7 @@
-\begin{minipage}[b]{MINIPAGE_WIDTH\linewidth}
-\begin{framed}
+\begin{minipage}[t]{MINIPAGE_WIDTH\linewidth}
+\fenboard{FEN_BOARD}
 \raggedright
+\begin{center}
+\scalebox{SCALEBOX_WIDTH}{\showboard}
+\end{center}
 \newgame
