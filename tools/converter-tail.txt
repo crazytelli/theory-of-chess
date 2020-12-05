@@ -1,5 +1,5 @@
 \begin{center}
-\scalebox{0.7}{\showboard}
+\scalebox{SCALEBOX_WIDTH}{\showboard}
 \end{center}
 % \subcaption{...}
 \end{framed}
