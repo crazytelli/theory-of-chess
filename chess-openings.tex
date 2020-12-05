@@ -1,0 +1,82 @@
+\documentclass[a4paper]{extarticle}
+\usepackage[left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm, twoside, headsep=0.15in, includehead, includefoot]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{Alegreya}
+\usepackage[tracking]{microtype}
+\usepackage[compact]{titlesec}
+\usepackage{xskak}
+\usepackage{graphicx}     % scalebox
+\usepackage{float}        % figures with [H]
+% \usepackage{subcaption} % not in use, takes too much space
+\usepackage{framed}       % for debugging
+
+\begin{document}
+\author{Remigiusz Suwalski}
+\title{Chess openings}
+\maketitle
+\section{Open games}
+\begin{figure}[H]
+\begin{minipage}[b]{.246\linewidth}
+\begin{framed}
+\raggedright
+\newgame
+\emph{Ruy Lopez}: \mainline{1. e4 e5 2. Nf3 Nc6 3. Bb5}.
+\emph{Morphy defence}: \mainline{3...a6}.
+\emph{Main line}: \mainline{4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O} (diagram).
+\begin{center}
+\scalebox{0.7}{\showboard}
+\end{center}
+% \subcaption{Ruy Lopez/Spanish Opening 1}
+\end{framed}
+\end{minipage}
+\begin{minipage}[b]{.246\linewidth}
+\begin{framed}
+\raggedright
+\newgame
+\emph{Ruy Lopez}: \mainline{1. e4 e5 2. Nf3 Nc6 3. Bb5}.
+\emph{Berlin Defence}: \mainline{3...Nf6}.
+\emph{Main line}: \mainline{4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8} (diagram).
+\begin{center}
+\scalebox{0.7}{\showboard}
+\end{center}
+% \subcaption{Ruy Lopez/Spanish Opening 2}
+\end{framed}
+\end{minipage}
+\begin{minipage}[b]{.246\linewidth}
+\begin{framed}
+\raggedright
+\newgame
+\emph{Italian game}: \mainline{1. e4 e5 2. Nf3 Nc6 3. Bc4}.
+\emph{Giuoco Piano}: \mainline{3...Bc5}.
+\emph{Giuoco Pianissimo}: \mainline{4. c3 Nf6 5. d3} (diagram).
+Alternatively: \variation{4. b4} (Evans Gambit) \variation{4...Bxb4 5. c3}.
+\begin{center}
+\scalebox{0.7}{\showboard}
+\end{center}
+% \subcaption{Italian Game 1}
+\end{framed}
+\end{minipage}
+\begin{minipage}[b]{.246\linewidth}
+\begin{framed}
+\raggedright
+\newgame
+\emph{Italian game}: \mainline{1. e4 e5 2. Nf3 Nc6 3. Bc4}.
+\emph{Two Knights Defence}: \mainline{3...Nf6}.
+\emph{Main line}: \mainline{4. Ng5 d5 5. exd5 Na5} (diagram).
+Alternatively: \variation{4. d3} (Modern Bishop’s Opening) \variation{4...Be7 5. O-O O-O 6. Re1 d6}.
+\begin{center}
+\scalebox{0.7}{\showboard}
+\end{center}
+% \subcaption{Italian Game 2}
+\end{framed}
+\end{minipage}
+\end{figure}
+
+\section{Semi-open games}
+
+\section{Closed games}
+
+\section{Indian defenses}
+
+\end{document}
