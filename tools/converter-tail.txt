@@ -1,0 +1,6 @@
+\begin{center}
+\scalebox{0.7}{\showboard}
+\end{center}
+% \subcaption{...}
+\end{framed}
+\end{minipage}

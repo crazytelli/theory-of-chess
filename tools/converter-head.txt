@@ -1,0 +1,4 @@
+\begin{minipage}[b]{.246\linewidth}
+\begin{framed}
+\raggedright
+\newgame
