@@ -11,6 +11,7 @@ MINIPAGE_WIDTH="$(bc -l <<< "1/${CHESSBOARDS_IN_A_ROW} - 0.025" | head -c 4)"
 
 if [[ -z "${TARGET_FILE}" ]]; then
 	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/open.tex" "o"
+	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/semi.tex" "s"
 	exit 0
 fi
 
