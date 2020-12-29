@@ -13,6 +13,7 @@ if [[ -z "${TARGET_FILE}" ]]; then
 	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/open.tex" "o"
 	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/semi.tex" "s"
 	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/closed.tex" "c"
+	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/indian.tex" "n"
 	exit 0
 fi
 
