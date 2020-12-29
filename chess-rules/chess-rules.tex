@@ -1,0 +1,55 @@
+\documentclass[a4paper,8pt]{extarticle}
+\usepackage[left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm, twoside, headsep=0.15in, includehead, includefoot]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{Alegreya}
+\usepackage[tracking]{microtype}
+\usepackage[compact]{titlesec}
+\usepackage{xskak}
+\usepackage{graphicx}     % scalebox
+\usepackage{float}        % figures with [H]
+\usepackage{framed}       % for debugging
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Page \thepage}
+\lhead{Rules of chess (last edited: 2020-12-30)}
+\rfoot{Source: \url{https://github.com/remigiusz-suwalski/theory-of-chess}}
+\begin{document}
+\author{Remigiusz Suwalski}
+\title{Rules of chess}
+
+\section{Gameplay}
+The player controlling the white pieces is named "White"; the player controlling the black pieces is named "Black". White moves first, then players alternate moves. Making a move is required; it is not legal to skip a move, even when having to move is detrimental. Play continues until a king is checkmated, a player resigns, or a draw is declared, as explained below. In addition, if the game is being played under a time control players who exceed their time limit lose the game. 
+
+\section{Movement}
+Each type of chess piece has its own method of movement. A piece moves to a vacant square except when capturing an opponent's piece. 
+
+Except for any move of the knight and castling, pieces cannot jump over other pieces. A piece is captured (or taken) when an attacking enemy piece replaces it on its square (en passant is the only exception). The captured piece is thereby permanently removed from the game.[1] The king can be put in check but cannot be captured (see below).
+
+The \textbf{king} moves exactly one square horizontally, vertically, or diagonally. A special move with the king known as castling is allowed only once per player, per game (see below).
+
+A \textbf{rook} moves any number of vacant squares horizontally or vertically. It also is moved when castling.
+
+A \textbf{bishop} moves any number of vacant squares diagonally.
+
+The \textbf{queen} moves any number of vacant squares horizontally, vertically, or diagonally.
+
+A \textbf{knight} moves to the nearest square not on the same rank, file, or diagonal. (This can be thought of as moving two squares horizontally then one square vertically, or moving one square horizontally then two squares vertically—i.e. in an "L" pattern.) The knight is not blocked by other pieces: it jumps to the new location.
+
+Pawns have the most complex rules of movement.
+A \textbf{pawn} moves straight forward one square, if that square is vacant. If it has not yet moved, a pawn also has the option of moving two squares straight forward, provided both squares are vacant. Pawns cannot move backwards.
+Pawns are the only pieces that capture differently from how they move. A pawn can capture an enemy piece on either of the two squares diagonally in front of the pawn (but cannot move to those squares if they are vacant).
+
+\subsection{Castling}
+
+\subsection{En passant}
+
+\subsection{Pawn promotion}
+
+\section{Check}
+
+\section{End of the game}
+\end{document}
