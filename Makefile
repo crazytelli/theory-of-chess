@@ -1,4 +1,7 @@
-all: src/open.tex src/semi.tex src/closed.tex src/indian.tex
+all: chess-openings.pdf
+
+chess-openings.pdf: src/open.tex src/semi.tex src/closed.tex src/indian.tex chess-openings.tex
+	pdflatex chess-openings.tex
 
 src/open.tex: src/*-o-*.tex
 	./tools/converter.bash 4 src/open.tex o
