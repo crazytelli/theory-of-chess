@@ -9,14 +9,6 @@ LETTER=$3 # o, s, c or n
 SCALEBOX_WIDTH="$(bc -l <<< "2.8/${CHESSBOARDS_IN_A_ROW}" | head -c 4)"
 MINIPAGE_WIDTH="$(bc -l <<< "1/${CHESSBOARDS_IN_A_ROW} - 0.025" | head -c 4)"
 
-if [[ -z "${TARGET_FILE}" ]]; then
-	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/open.tex" "o"
-	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/semi.tex" "s"
-	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/closed.tex" "c"
-	"$0" "$CHESSBOARDS_IN_A_ROW" "${repo_root}/src/indian.tex" "n"
-	exit 0
-fi
-
 {
 	counter=0
 	for opening in "${repo_root}"/src/*-${LETTER}-*; do
