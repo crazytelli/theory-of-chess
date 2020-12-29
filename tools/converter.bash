@@ -4,7 +4,7 @@ set -e
 parse_openings() {
     local counter=0
     for opening in "${REPOSITORY_ROOT}"/src/*-${LETTER}-*; do
-        if ! grep -q '@' "$opening"; then
+        if ! grep -q '@' "${opening}"; then
             continue
         fi
         fen="$(awk -F '@' '/@/ {print $2}' "${opening}")"
@@ -30,6 +30,7 @@ REPOSITORY_ROOT="$(readlink -f "$(dirname "$(dirname "$0")")")"
 CHESSBOARDS_IN_A_ROW="${1:-4}"
 TARGET_FILE="$2"
 LETTER=$3 # o, s, c or n
+
 SCALEBOX_WIDTH="$(bc -l <<< "2.8/${CHESSBOARDS_IN_A_ROW}" | head -c 4)"
 MINIPAGE_WIDTH="$(bc -l <<< "1/${CHESSBOARDS_IN_A_ROW} - 0.025" | head -c 4)"
 
