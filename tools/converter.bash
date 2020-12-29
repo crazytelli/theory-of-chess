@@ -1,6 +1,25 @@
 #!/usr/bin/env bash
 set -e
 
+print_head() {
+cat << EOF
+\begin{minipage}[t]{MINIPAGE_WIDTH\linewidth}
+\fenboard{FEN_BOARD}
+\raggedright
+\begin{center}
+\scalebox{SCALEBOX_WIDTH}{\showboard}
+\end{center}
+\newgame
+EOF
+}
+
+print_tail() {
+cat << EOF
+\vspace{2mm}
+\end{minipage}
+EOF
+}
+
 parse_openings() {
     local counter=0
     for opening in "${REPOSITORY_ROOT}"/src/*-${LETTER}-*; do
@@ -8,10 +27,11 @@ parse_openings() {
             continue
         fi
         fen="$(awk -F '@' '/@/ {print $2}' "${opening}")"
-        cat \
-            "${REPOSITORY_ROOT}/tools/converter-head.txt" \
-            "${opening}" \
-            "${REPOSITORY_ROOT}/tools/converter-tail.txt" | grep -v 'PGN' | sed -r "s@FEN_BOARD@${fen}@g"
+        {
+            print_head
+            cat "${opening}"
+            print_tail
+        } | grep -v 'PGN' | sed -r "s@FEN_BOARD@${fen}@g"
         counter=$((counter+1))
         if ! (( counter % CHESSBOARDS_IN_A_ROW )); then
             echo "\newline"

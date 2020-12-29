@@ -1,2 +1,0 @@
-\vspace{2mm}
-\end{minipage}
