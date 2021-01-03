@@ -1,4 +1,4 @@
-CHESSBOARDS_PER_ROW := "4"
+CHESSBOARDS_PER_ROW := "5"
 
 all: chess-openings.pdf
 
